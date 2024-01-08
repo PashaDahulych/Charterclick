@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
 
@@ -769,7 +770,7 @@ textarea.input {
 
 .options__text {
   color: #0A3647;
-  font-family: "Gotham Pro";
+  font-family: "GothamPro";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1067,8 +1068,8 @@ textarea.input {
           flex: 0 0 1.5rem;
   font-size: 1.5rem;
   color: #90bfdb;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1155,10 +1156,10 @@ textarea.input {
           flex: 0 0 1.5rem;
   font-size: 1.5rem;
   color: #90bfdb;
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   will-change: transform;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,10 +1182,10 @@ textarea.input {
           flex: 0 0 1.5rem;
   font-size: 1.5rem;
   color: #90bfdb;
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   will-change: transform;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1494,7 +1495,7 @@ textarea.input {
   bottom: calc(100% - 0.0625rem);
   border-bottom: 0;
   border-radius: 0.25rem 0.25rem 0rem 0rem;
-  padding: 0.3125rem remrem(0) 0.625rem 0rem;
+  padding: 0.3125rem 0rem 0.625rem 0rem;
 }
 
 .select_form-n-a-result._select-focus,
@@ -1940,7 +1941,7 @@ textarea.input {
 .select_form-passengers-apply-offers_show-top .select-main__options {
   bottom: calc(100% - 0.0625rem);
   border-bottom: 0;
-  border-radius: 0.25rem toRem(4) 0rem 0rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
   padding: 0.3125rem 0rem 0.625rem 0rem;
 }
 
@@ -8600,14 +8601,21 @@ body::after {
   margin-bottom: 1.25rem;
 }
 
+.special__action-card div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47.142857%;
+          flex: 0 1 47.142857%;
+}
+
 .special__action-card div h5 {
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .special__action-card div h5:not(:last-child) {
-  margin-bottom: 0.6875rem;
+  margin-bottom: 0.3125rem;
 }
 
 .special__action-card div p {
@@ -8617,7 +8625,7 @@ body::after {
 }
 
 .special__action-card div p:not(:last-child) {
-  margin-bottom: 0.6875rem;
+  margin-bottom: 0.3125rem;
 }
 
 .form-yacht__head {
@@ -9958,7 +9966,7 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1.25rem;
+  gap: 0.9375rem;
 }
 
 .filters h3 {
@@ -10261,6 +10269,95 @@ body::after {
 .filters__options-wrapper--subtain._open-modal {
   opacity: 1;
   visibility: visible;
+}
+
+.filters__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.filters__input:checked ~ .filters__label .filters__checkbox-icon:after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.filters__label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.3125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters__checkbox-icon {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.5rem;
+          flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters__checkbox-icon::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.125rem;
+          flex: 0 0 1.125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 0.125rem solid #90BFDB;
+  border-radius: 0.1875rem;
+}
+
+.filters__checkbox-icon::after {
+  content: "\e909";
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease 0s;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, background-color 0.3s ease;
+  transition: transform 0.3s ease 0s, background-color 0.3s ease, -webkit-transform 0.3s ease 0s;
+  font-family: "icons";
+  font-size: 0.484375rem;
+  position: absolute;
+  color: #90BFDB;
+  -webkit-transform: scale(0) translate(-50%, -50%);
+      -ms-transform: scale(0) translate(-50%, -50%);
+          transform: scale(0) translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.filters__text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.filters__text span {
+  font-weight: 500;
+  color: #ee6010;
+}
+
+.filters__inf-button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 1rem;
+  color: #90BFDB;
 }
 
 .mobile-filters__line {
@@ -16866,6 +16963,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
         -ms-transform: translate(-42%, 92.5%);
             transform: translate(-42%, 92.5%);
   }
+
+  .filters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -17709,8 +17813,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
-    padding-bottom: 1.5rem;
-    border-bottom: 0.0625rem solid rgba(144, 191, 219, 0.5);
   }
 
   .filters__options-wrapper {
@@ -17720,6 +17822,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+  }
+
+  .filters__checkbox:not(:last-child) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.0625rem solid rgba(144, 191, 219, 0.5);
   }
 
   .yacht-card-selected__fixed-button._scroll {
@@ -18401,8 +18509,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             flex: 0 0 1.5rem;
     font-size: 1.5rem;
     color: #90bfdb;
-    -webkit-transition: all 0.3s eass;
-    transition: all 0.3s eass;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -19650,6 +19758,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 389px) {
+  .select-main__title {
+    font-size: 0.75rem;
+  }
+
+  .select-main__option {
+    font-size: 0.75rem;
+  }
+
   .select_form-type-monye .select-main__options {
     font-size: 0.625rem;
     padding: 0.3125rem 0rem;
@@ -22111,15 +22227,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 24.3125em) and (max-width: 20em) {
+  .form-popup__as h4 {
+    font-size: 1.125rem;
+  }
+
+  .successfully-booked__text {
+    font-size: 1.125rem;
+  }
+}
+
 @media (max-width: 24.3125em) {
-  .select-main__title {
-    font-size: 0.75rem;
-  }
-
-  .select-main__option {
-    font-size: 0.75rem;
-  }
-
   .options-popup {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -22136,16 +22254,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .user-change__base-total {
     font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 24.3125em) and (max-width: 20em) {
-  .form-popup__as h4 {
-    font-size: 1.125rem;
-  }
-
-  .successfully-booked__text {
-    font-size: 1.125rem;
   }
 }
 
