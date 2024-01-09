@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
 
@@ -436,8 +435,8 @@ body {
 .button--card {
   padding-top: 0.6625rem;
   padding-bottom: 0.6625rem;
-  padding-right: 1.5625rem;
-  padding-left: 1.5625rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
   border-radius: 6.25rem;
   border: 0.125rem solid #109eee;
   background-color: #109eee;
@@ -4324,7 +4323,6 @@ body::after {
 .card-ship {
   background-color: #fff;
   border-radius: 0.625rem;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4703,7 +4701,7 @@ body::after {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 1;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4714,6 +4712,8 @@ body::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
+  border-radius: 0.625rem 0rem 0rem 0rem;
 }
 
 .labels__inst-book {
@@ -7580,9 +7580,9 @@ body::after {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 0;
+  right: 0;
   height: 100%;
-  width: 100%;
+  width: 1000%;
   background-color: #fff;
   z-index: -1;
 }
@@ -7873,7 +7873,7 @@ body::after {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 300%;
+  height: 100%;
   width: 800%;
   background-color: #fff;
   z-index: -1;
@@ -10489,9 +10489,9 @@ body::after {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 0;
+  right: 0;
   height: 100%;
-  width: 100%;
+  width: 1000%;
   background-color: #fff;
   z-index: -1;
 }
@@ -17824,7 +17824,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate(0%, 0%);
   }
 
-  .filters__checkbox:not(:last-child) {
+  .filters__checkbox {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 0.0625rem solid rgba(144, 191, 219, 0.5);
@@ -19232,6 +19232,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .body-yacht-card__ship-block {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .body-yacht-card__body {
+    padding-right: 0.75rem;
+  }
+
+  .body-yacht-card__testination {
+    padding-right: 0.75rem;
   }
 
   .body-yacht-card__testination .testination__wrapper {
