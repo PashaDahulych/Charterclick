@@ -3772,7 +3772,7 @@ body::after {
   background-color: #fff;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3784,13 +3784,10 @@ body::after {
           align-items: center;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  opacity: 1;
-  visibility: visible;
 }
 
 .preloader.done {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .loader {
@@ -9042,6 +9039,47 @@ body::after {
   margin-bottom: 0.625rem;
 }
 
+/*
+.body-yacht-card__about-ship::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 800%;
+    background-color: #fff;
+    z-index: -1;
+}
+.yacht-card__body::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 100%;
+    width: 1000%;
+    background-color: #fff;
+    z-index: -1;
+}
+.yacht-card-selected__body::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 100%;
+    width: 1000%;
+    background-color: #fff;
+    z-index: -1;
+}
+@media (max-width: 767.98px){
+    .body-yacht-card__body{
+        padding-right: 0.75rem;
+    }
+    .body-yacht-card__testination{
+        padding-right: 0.75rem;
+    }
+}
+*/
+
 .blog__rental {
   background-color: #fff;
 }
@@ -10147,6 +10185,7 @@ body::after {
           transform: translate(0%, 115%);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   -webkit-transition: opacity 0.3s ease 0s, height 0.3s ease;
   transition: opacity 0.3s ease 0s, height 0.3s ease;
 }
@@ -10154,6 +10193,7 @@ body::after {
 .filters__price._open-modal {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .filters__input-wrapper {
@@ -10228,11 +10268,13 @@ body::after {
   transition: opacity 0.3s ease 0s;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
 }
 
 .filters__year._open-modal {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .filters__options-wrapper {
@@ -17667,6 +17709,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     opacity: 1;
     visibility: visible;
     z-index: 12;
+  }
+
+  .filters._open-modal .filters__price {
+    pointer-events: auto;
+  }
+
+  .filters._open-modal .filters__year {
+    pointer-events: auto;
   }
 
   .filters__sort-line {
