@@ -2623,8 +2623,21 @@ textarea.input {
   background-color: #0A3647;
 }
 
+.qs-datepicker .qs-square.qs-outside-current-month.qs-disabled {
+  position: relative;
+}
+
 .qs-datepicker .qs-square.qs-outside-current-month.qs-disabled::after {
-  background-color: transparent;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  height: 1px;
+  width: 60%;
+  background-color: #0A3647;
 }
 
 .qs-datepicker .qs-square.qs-day {
@@ -10509,6 +10522,68 @@ body::after {
   font-size: 0.9375rem;
   color: #90bfdb;
 }
+
+/*
+.filters__price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transform: translate(0%, 115%);
+    -ms-transform: translate(0%, 115%);
+    transform: translate(0%, 115%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition:
+        opacity 0.3s ease 0s,
+        height 0.3s ease;
+    transition:
+        opacity 0.3s ease 0s,
+        height 0.3s ease;
+}
+
+.filters__price._open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.filters__year {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    -webkit-transform: translate(0%, 115%);
+    -ms-transform: translate(0%, 115%);
+    transform: translate(0%, 115%);
+    -webkit-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.filters__year._open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+@media (max-width: 991.98px) {
+    .filters._open-modal .filters__price {
+        pointer-events: auto;
+    }
+    .filters._open-modal .filters__year {
+        pointer-events: auto;
+    }
+}
+@media (max-width: 61.99875em) {
+    .result__main{
+        padding-top: 9.5rem;
+    }
+}
+*/
 
 .yacht-card-selected__wrapper {
   max-width: 90rem;

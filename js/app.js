@@ -1701,24 +1701,19 @@
         function addLeadingZero(number) {
             return number < 10 ? `0${number}` : number;
         }
-        function getPreviousDate() {
-            const previousDate = new Date(currentDate);
-            previousDate.setDate(currentDate.getDate() - 1);
-            return previousDate;
-        }
-        const minDate = getPreviousDate();
+        const minDate = currentDate;
         const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${year}`;
         const dateInputs = document.querySelectorAll("[data-datepicker]");
         dateInputs.forEach((dateInput => {
             dateInput.placeholder = formattedDate;
             datepicker_min(dateInput, {
-                customDays: [ "M", "T", "W", "T", "F", "S", "S" ],
+                customDays: [ "S", "M", "T", "W", "T", "F", "S" ],
                 customMonths: [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
                 showAllDates: true,
                 overlayButton: "Apply",
                 overlayPlaceholder: "Year (4 numbers)",
                 minDate,
-                startDay: 6,
+                startDay: 1,
                 formatter: (input, date, instance) => {
                     const value = date.toLocaleDateString();
                     input.value = value;
@@ -8531,7 +8526,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const da = new DynamicAdapt("max");
         da.init();
-        document.body.onload = function() {
+        window.onload = function() {
             setTimeout((function() {
                 let preloader = document.getElementById("page-preloader");
                 if (!preloader.classList.contains("done")) preloader.classList.add("done");
