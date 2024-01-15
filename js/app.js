@@ -1695,14 +1695,14 @@
         flsModules.select = new SelectConstructor({});
         var datepicker_min = __webpack_require__(448);
         const currentDate = new Date;
-        const day = currentDate.getDate() + 1;
+        const day = currentDate.getDate();
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
+        const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${year}`;
         function addLeadingZero(number) {
             return number < 10 ? `0${number}` : number;
         }
         const minDate = currentDate;
-        const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${year}`;
         const dateInputs = document.querySelectorAll("[data-datepicker]");
         dateInputs.forEach((dateInput => {
             dateInput.placeholder = formattedDate;
@@ -1718,9 +1718,52 @@
                     const value = date.toLocaleDateString();
                     input.value = value;
                 },
-                onSelect: function(input, instance, date) {}
+                onSelect: function(instance, date) {
+                    updateDataValue(dateInput, date);
+                }
             });
+            updateDataValue(dateInput, currentDate);
         }));
+        function updateDataValue(input, date) {
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+            const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${addLeadingZero(year)}`;
+            input.setAttribute("data-value", formattedDate);
+        }
+        const datepicker_forms = document.querySelectorAll("form");
+        datepicker_forms.forEach((form => {
+            form.addEventListener("submit", (e => {
+                e.preventDefault();
+                sendDataToServer(form);
+            }));
+        }));
+        function sendDataToServer(form) {
+            const dateInput = form.querySelector("[data-datepicker]");
+            if (dateInput) {
+                const dateValue = dateInput.getAttribute("data-value");
+                const startTimeValue = form.querySelector(".start-time").value;
+                const durationValue = form.querySelector(".duration").value;
+                const passengerValue = form.querySelector(".passengers").value;
+                const dataToSend = {
+                    date: dateValue,
+                    startTime: startTimeValue,
+                    duration: durationValue,
+                    passengers: passengerValue
+                };
+                fetch("https://jsonplaceholder.typicode.com/posts", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(dataToSend)
+                }).then((response => response.json())).then((data => {
+                    console.log("Server response:", data);
+                })).catch((error => {
+                    console.log("Error:", error);
+                }));
+            }
+        }
         function ssr_window_esm_isObject(obj) {
             return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
         }
@@ -8526,12 +8569,6 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const da = new DynamicAdapt("max");
         da.init();
-        window.onload = function() {
-            setTimeout((function() {
-                let preloader = document.getElementById("page-preloader");
-                if (!preloader.classList.contains("done")) preloader.classList.add("done");
-            }), 600);
-        };
         try {
             const galeryButton = document.querySelector(".main-yacht-cadr__show-all-photos");
             const galeryBody = document.querySelector(".main-yacht-cadr__image");

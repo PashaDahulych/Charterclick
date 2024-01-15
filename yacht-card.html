@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240109123459">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240115161517">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1507,7 +1507,7 @@
 					</div>
 				</div>
 				<aside class="yacht-card__aside aside-yacht-card">
-					<form class="aside-yacht-card__form form-yacht" action="#" method="POST">
+					<form class="aside-yacht-card__form form-yacht" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 						<div class="form-yacht__head">
 							<div class="form-yacht__price">
 								<h4>Prise per 1 hour</h4>
@@ -1520,14 +1520,14 @@
 						</div>
 						<div class="form-yacht__body" data-one-select>
 							<div class="form-yacht__line form-yacht__line--calendar">
-								<label for="calendar">Date</label>
+								<label for="calendarCard">Date</label>
 								<span class="form-yacht__icon _icon-calendar"></span>
-								<input type="text" name="form[calendar]" placeholder="22.03.2023" id="calendar" data-datepicker autocomplete="off" />
+								<input type="text" name="form[calendarCard]" placeholder="22.03.2023" id="calendarCard" data-datepicker autocomplete="off" />
 								<span class="form-yacht__select-arrow _icon-select-arrow"></span>
 							</div>
 							<div class="form-yacht__line">
-								<label for="start-time">Start time</label>
-								<select name="form[start-time]" data-class-modif="form-n-a-yacht" id="start-time" data-scroll>
+								<label for="startTimeCard">Start time</label>
+								<select name="form[startTimeCard]" data-class-modif="form-n-a-yacht" id="startTimeCard" data-scroll class="start-time">
 									<!-- selected -->
 									<option value="" selected>
 										Start time
@@ -1558,8 +1558,8 @@
 								</select>
 							</div>
 							<div class="form-yacht__line">
-								<label for="duration">Duration</label>
-								<select name="form[duration]" data-class-modif="form-hors-yacht" id="duration" data-scroll>
+								<label for="durationCard">Duration</label>
+								<select name="form[durationCard]" data-class-modif="form-hors-yacht" id="durationCard" data-scroll class="duration">
 									<!-- selected -->
 									<option value="" selected>
 										Duration
@@ -1579,8 +1579,8 @@
 								</select>
 							</div>
 							<div class="form-yacht__line">
-								<label for="passenger">Passenger</label>
-								<select name="form[passenger]" data-class-modif="form-passengers-yacht" id="passenger" data-scroll>
+								<label for="passengersCard">Passenger</label>
+								<select name="form[passengersCard]" data-class-modif="form-passengers-yacht" id="passengersCard" data-scroll class="passengers">
 									<!-- selected -->
 									<option value="" selected>
 										Passenger
@@ -2437,7 +2437,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240109123459"></script>
+	<script src="js/app.min.js?_v=20240115161517"></script>
 </body>
 
 </html>
