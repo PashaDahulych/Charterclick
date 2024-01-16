@@ -1639,6 +1639,7 @@
                             optionItem.hidden = true;
                         }), this.config.speed);
                         originalSelect.setAttribute("data-value", optionItem.hasAttribute("data-value") ? optionItem.dataset.value : optionItem.textContent);
+                        this.selectAction(selectItem);
                         originalSelect.value = optionItem.hasAttribute("data-value") ? optionItem.dataset.value : optionItem.textContent;
                         this.setSelectChange(originalSelect);
                     }
