@@ -1731,39 +1731,6 @@
             const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${addLeadingZero(year)}`;
             input.setAttribute("data-value", formattedDate);
         }
-        const datepicker_forms = document.querySelectorAll("form");
-        datepicker_forms.forEach((form => {
-            form.addEventListener("submit", (e => {
-                e.preventDefault();
-                sendDataToServer(form);
-            }));
-        }));
-        function sendDataToServer(form) {
-            const dateInput = form.querySelector("[data-datepicker]");
-            if (dateInput) {
-                const dateValue = dateInput.getAttribute("data-value");
-                const startTimeValue = form.querySelector(".start-time").value;
-                const durationValue = form.querySelector(".duration").value;
-                const passengerValue = form.querySelector(".passengers").value;
-                const dataToSend = {
-                    date: dateValue,
-                    startTime: startTimeValue,
-                    duration: durationValue,
-                    passengers: passengerValue
-                };
-                fetch("https://jsonplaceholder.typicode.com/posts", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(dataToSend)
-                }).then((response => response.json())).then((data => {
-                    console.log("Server response:", data);
-                })).catch((error => {
-                    console.log("Error:", error);
-                }));
-            }
-        }
         function ssr_window_esm_isObject(obj) {
             return obj !== null && typeof obj === "object" && "constructor" in obj && obj.constructor === Object;
         }
@@ -8715,6 +8682,26 @@ PERFORMANCE OF THIS SOFTWARE.
                 totalBlock.appendChild(baseTotalBlock);
             }
         }));
+        function handleSelectChange(event) {
+            const selectedOption = event.target.options[event.target.selectedIndex];
+            const selectedValue = selectedOption.value;
+            event.target.setAttribute("data-value", selectedValue);
+            const selectId = event.target.id;
+            console.log(`Select with ID ${selectId} has value: ${selectedValue}`);
+        }
+        function initSelects() {
+            const formElements = document.querySelectorAll("form");
+            formElements.forEach((form => {
+                const selectElements = form.querySelectorAll("select");
+                selectElements.forEach((select => {
+                    select.addEventListener("change", handleSelectChange);
+                    handleSelectChange({
+                        target: select
+                    });
+                }));
+            }));
+        }
+        document.addEventListener("DOMContentLoaded", initSelects);
         window["FLS"] = false;
         isWebp();
         menuInit();

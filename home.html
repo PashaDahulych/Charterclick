@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240115161517">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240116110832">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -179,18 +179,18 @@
 					<h3 class="search-main__title title title--small">
 						Book a boat in a few clicks
 					</h3>
-					<form class="search-main__forma" action="#" method="POST" data-one-select>
+					<form class="search-main__forma" action="https://jsonplaceholder.typicode.com/posts" method="POST" data-one-select>
 						<!-- Hidden input -->
 						<input type="hidden" name="durationType" value="secret" />
 						<div class="search-main__line search-main__line--calendar">
 							<label for="date">Date</label>
 							<span class="search-main__icon _icon-calendar"></span>
-							<input autocomplete="off" id="date" name="form[date]" data-datepicker placeholder="" value="" type="text" />
+							<input autocomplete="off" id="date" name="date" data-datepicker placeholder="" value="" type="text" />
 							<span class="search-main__select-arrow _icon-select-arrow"></span>
 						</div>
 						<div class="search-main__line">
 							<label for="startTime">Start time</label>
-							<select name="form[startTime]" id="startTime" data-class-modif="form-n-a" data-scroll data-show-selected class="start-time">
+							<select name="startTime" id="startTime" data-class-modif="form-n-a" data-scroll data-show-selected data-value="">
 								<option value="00:00">00:00</option>
 								<option value="01:00">01:00</option>
 								<option value="02:00">02:00</option>
@@ -221,7 +221,7 @@
 						</div>
 						<div class="search-main__line">
 							<label for="duration">Duration</label>
-							<select name="form[duration]" id="duration" data-class-modif="form-hors" data-scroll data-show-selected class="duration">
+							<select name="duration" id="duration" data-class-modif="form-hors" data-scroll data-show-selected data-value="" data-value="">
 								<option value="1">1 hour</option>
 								<option value="2">2 hours</option>
 								<option value="3">3 hours</option>
@@ -238,7 +238,7 @@
 						</div>
 						<div class="search-main__line">
 							<label for="passengers">Passengers</label>
-							<select name="form[passengers]" id="passengers" data-class-modif="form-passengers" data-scroll data-show-selected class="passengers">
+							<select name="passengers" id="passengers" data-class-modif="form-passengers" data-scroll data-show-selected>
 								<option value="1">1 passengers</option>
 								<option value="2">2 passengers</option>
 								<option value="3">3 passengers</option>
@@ -2890,7 +2890,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240115161517"></script>
+	<script src="js/app.min.js?_v=20240116110832"></script>
 </body>
 
 </html>
