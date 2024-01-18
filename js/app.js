@@ -1435,6 +1435,8 @@
                 this.setOptions(selectItem, originalSelect);
                 originalSelect.hasAttribute("data-search") ? this.searchActions(selectItem) : null;
                 originalSelect.hasAttribute("data-open") ? this.selectAction(selectItem) : null;
+                const selectedOption = originalSelect.querySelector("option[selected]");
+                if (selectedOption) originalSelect.setAttribute("data-value", selectedOption.value);
                 this.selectDisabled(selectItem, originalSelect);
             }
             selectsActions(e) {
@@ -1451,7 +1453,6 @@
                         } else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectTitle))) this.selectAction(selectItem); else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption))) {
                             const optionItem = targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption));
                             this.optionAction(selectItem, originalSelect, optionItem);
-                            console.log(optionItem);
                         }
                     } else if (targetType === "focusin" || targetType === "focusout") {
                         if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelect))) targetType === "focusin" ? selectItem.classList.add(this.selectClasses.classSelectFocus) : selectItem.classList.remove(this.selectClasses.classSelectFocus);
@@ -8685,26 +8686,69 @@ PERFORMANCE OF THIS SOFTWARE.
                 totalBlock.appendChild(baseTotalBlock);
             }
         }));
-        function handleSelectChange(event) {
-            const selectedOption = event.target.options[event.target.selectedIndex];
-            const selectedValue = selectedOption.value;
-            event.target.setAttribute("data-value", selectedValue);
-            const selectId = event.target.id;
-            console.log(`Select with ID ${selectId} has value: ${selectedValue}`);
+        function initMap() {
+            new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: 50.44734626064732,
+                    lng: 30.522165172927547
+                },
+                zoom: 10,
+                styles: [ {
+                    featureType: "administrative",
+                    elementType: "labels.text.fill",
+                    stylers: [ {
+                        color: "#444444"
+                    } ]
+                }, {
+                    featureType: "landscape",
+                    elementType: "all",
+                    stylers: [ {
+                        color: "#f2f2f2"
+                    } ]
+                }, {
+                    featureType: "poi",
+                    elementType: "all",
+                    stylers: [ {
+                        visibility: "off"
+                    } ]
+                }, {
+                    featureType: "road",
+                    elementType: "all",
+                    stylers: [ {
+                        saturation: -100
+                    }, {
+                        lightness: 45
+                    } ]
+                }, {
+                    featureType: "road.highway",
+                    elementType: "all",
+                    stylers: [ {
+                        visibility: "simplified"
+                    } ]
+                }, {
+                    featureType: "road.arterial",
+                    elementType: "labels.icon",
+                    stylers: [ {
+                        visibility: "off"
+                    } ]
+                }, {
+                    featureType: "transit",
+                    elementType: "all",
+                    stylers: [ {
+                        visibility: "off"
+                    } ]
+                }, {
+                    featureType: "water",
+                    elementType: "all",
+                    stylers: [ {
+                        color: "#46bcec"
+                    }, {
+                        visibility: "on"
+                    } ]
+                } ]
+            });
         }
-        function initSelects() {
-            const formElements = document.querySelectorAll("form");
-            formElements.forEach((form => {
-                const selectElements = form.querySelectorAll("select");
-                selectElements.forEach((select => {
-                    select.addEventListener("change", handleSelectChange);
-                    handleSelectChange({
-                        target: select
-                    });
-                }));
-            }));
-        }
-        document.addEventListener("DOMContentLoaded", initSelects);
+        window.initMap = initMap;
         window["FLS"] = false;
         isWebp();
         menuInit();
