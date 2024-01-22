@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
+
 @font-face {
   font-family: GothamPro;
   font-display: swap;
@@ -2237,7 +2238,6 @@ textarea.input {
   -webkit-box-shadow: 0rem 0.4375rem 0.5rem 0rem rgba(72, 119, 145, 0.2), 0rem 0.3125rem 1.375rem 0rem rgba(72, 119, 145, 0.12), 0rem 0.75rem 1.0625rem 0rem rgba(72, 119, 145, 0.14);
   border: 0.0625rem solid rgba(144, 191, 219, 0.5);
   background-color: #fff;
-  /* filter */
   box-shadow: 0rem 0.4375rem 0.5rem 0rem rgba(72, 119, 145, 0.2), 0rem 0.3125rem 1.375rem 0rem rgba(72, 119, 145, 0.12), 0rem 0.75rem 1.0625rem 0rem rgba(72, 119, 145, 0.14);
   padding: 1rem;
   -webkit-transition: opacity 0.5s ease 0s;
@@ -2515,12 +2515,6 @@ textarea.input {
   border-radius: 50%;
 }
 
-.qs-datepicker .qs-square.qs-current {
-  font-weight: 700;
-  color: #109EEE;
-  border: 0.0625rem solid #109EEE;
-}
-
 .qs-datepicker .qs-square.qs-current span {
   text-decoration: underline;
 }
@@ -2686,6 +2680,12 @@ textarea.input {
     }
 }
 */
+
+.qs-current + .qs-square {
+  font-weight: 700;
+  color: #109EEE;
+  border: 0.0625rem solid #109EEE;
+}
 
 body::after {
   content: "";

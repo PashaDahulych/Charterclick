@@ -1699,14 +1699,15 @@
         flsModules.select = new SelectConstructor({});
         var datepicker_min = __webpack_require__(448);
         const currentDate = new Date;
-        const day = currentDate.getDate();
+        const day = currentDate.getDate() + 1;
         const month = currentDate.getMonth() + 1;
         const year = currentDate.getFullYear();
         const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${year}`;
         function addLeadingZero(number) {
             return number < 10 ? `0${number}` : number;
         }
-        const minDate = currentDate;
+        const minDate = new Date;
+        minDate.setDate(currentDate.getDate() + 1);
         const dateInputs = document.querySelectorAll("[data-datepicker]");
         dateInputs.forEach((dateInput => {
             dateInput.placeholder = formattedDate;
