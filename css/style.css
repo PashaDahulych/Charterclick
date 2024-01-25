@@ -2515,6 +2515,12 @@ textarea.input {
   border-radius: 50%;
 }
 
+.qs-datepicker .qs-square.qs-current + .qs-square {
+  font-weight: 700;
+  color: #109EEE;
+  border: 0.0625rem solid #109EEE;
+}
+
 .qs-datepicker .qs-square.qs-current span {
   text-decoration: underline;
 }
@@ -2680,12 +2686,6 @@ textarea.input {
     }
 }
 */
-
-.qs-current + .qs-square {
-  font-weight: 700;
-  color: #109EEE;
-  border: 0.0625rem solid #109EEE;
-}
 
 body::after {
   content: "";
@@ -10212,7 +10212,7 @@ body::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: translate(0%, 115%);
       -ms-transform: translate(0%, 115%);
           transform: translate(0%, 115%);
@@ -10227,6 +10227,7 @@ body::after {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .filters__input-wrapper {
@@ -10293,7 +10294,7 @@ body::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: translate(0%, 115%);
       -ms-transform: translate(0%, 115%);
           transform: translate(0%, 115%);
@@ -10308,6 +10309,7 @@ body::after {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .filters__options-wrapper {
