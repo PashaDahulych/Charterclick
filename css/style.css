@@ -10316,7 +10316,7 @@ body::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: translate(0%, 108%);
       -ms-transform: translate(0%, 108%);
           transform: translate(0%, 108%);
@@ -10329,13 +10329,14 @@ body::after {
 .filters__options-wrapper._open-modal {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .filters__options-wrapper--subtain {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: translate(0%, 104%);
       -ms-transform: translate(0%, 104%);
           transform: translate(0%, 104%);
@@ -10346,6 +10347,7 @@ body::after {
 .filters__options-wrapper--subtain._open-modal {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .filters__input {
@@ -18311,6 +18313,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 100%;
     padding: 0rem;
     border: none;
+    z-index: -1;
   }
 
   .filters__button span {
@@ -18350,6 +18353,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .filters__button._open-modal {
     border: none;
+    z-index: 2;
   }
 
   .filters__button._open-modal span {
@@ -18390,6 +18394,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+    z-index: 2;
   }
 
   .filters__input-wrapper {
@@ -18408,24 +18413,39 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
-  }
-
-  .filters__options-wrapper--subtain {
-    position: relative;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translate(0%, 0%);
-        -ms-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    z-index: 2;
   }
 
   .filters__options-wrapper {
     position: relative;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     -webkit-transform: translate(0%, 0%);
         -ms-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
+    z-index: -1;
+  }
+
+  ._open-modal .filters__options-wrapper {
+    opacity: 1;
+    z-index: 2;
+    visibility: visible;
+  }
+
+  .filters__options-wrapper--subtain {
+    position: relative;
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  ._open-modal .filters__options-wrapper--subtain {
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
   }
 
   .filters__checkbox {
