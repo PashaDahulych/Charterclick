@@ -10609,6 +10609,168 @@ body::after {
 }
 */
 
+/*
+.filters__price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 115%);
+    -ms-transform: translate(0%, 115%);
+    transform: translate(0%, 115%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition:
+        opacity 0.3s ease 0s,
+        height 0.3s ease;
+    transition:
+        opacity 0.3s ease 0s,
+        height 0.3s ease;
+}
+
+.filters__price._open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.filters__year {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 115%);
+    -ms-transform: translate(0%, 115%);
+    transform: translate(0%, 115%);
+    -webkit-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.filters__year._open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 2;
+}
+.filters__options-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 108%);
+    -ms-transform: translate(0%, 108%);
+    transform: translate(0%, 108%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+
+.filters__options-wrapper._open-modal {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.filters__options-wrapper--subtain {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-transform: translate(0%, 104%);
+    -ms-transform: translate(0%, 104%);
+    transform: translate(0%, 104%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.filters__options-wrapper--subtain._open-modal {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+@media (max-width: 991.98px) {
+    .filters._open-modal .filters__price {
+        pointer-events: auto;
+    }
+
+    .filters._open-modal .filters__year {
+        pointer-events: auto;
+    }
+    .filters__button {
+        color: #487791;
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: uppercase;
+        border-radius: 0rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0rem;
+        border: none;
+        z-index: -1;
+    }
+    .filters__button._open-modal {
+        border: none;
+        z-index: 2;
+    }
+    .filters__price {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        z-index: 2;
+    }
+    .filters__year {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        z-index: 2;
+    }
+    .filters__options-wrapper {
+        position: relative;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        z-index: -1;
+    }
+    ._open-modal .filters__options-wrapper {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    .filters__options-wrapper--subtain {
+        position: relative;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    ._open-modal .filters__options-wrapper--subtain {
+        z-index: 2;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+*/
+
 .yacht-card-selected__wrapper {
   max-width: 90rem;
   margin: 0 auto;
@@ -18479,8 +18641,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .main-cofirmation__top {
     background-color: transparent;
-    padding-bottom: 0rem;
-    padding-right: 0rem;
   }
 
   .main-cofirmation__top::before {
@@ -21413,11 +21573,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .main-cofirmation__top {
-    padding-right: 0.5rem;
+    padding-right: 0.0000000625rem;
   }
 
   .main-cofirmation__top {
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.0000000625rem;
   }
 
   .personal-info {
@@ -24138,27 +24298,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (padding-right: clamp( 0.5rem , -5.9132952129rem  +  10.3442330901vw , 2.75rem )) {
+@supports (padding-right: clamp( 0.0000000625rem , -7.8384716863rem  +  12.6429512672vw , 2.75rem )) {
     .main-cofirmation__top {
-      padding-right: clamp( 0.5rem , -5.9132952129rem  +  10.3442330901vw , 2.75rem );
+      padding-right: clamp( 0.0000000625rem , -7.8384716863rem  +  12.6429512672vw , 2.75rem );
     }
 }
 
-@supports not (padding-right: clamp( 0.5rem , -5.9132952129rem  +  10.3442330901vw , 2.75rem )) {
+@supports not (padding-right: clamp( 0.0000000625rem , -7.8384716863rem  +  12.6429512672vw , 2.75rem )) {
     .main-cofirmation__top {
-      padding-right: calc(0.5rem + 2.25 * (100vw - 61.99875rem) / 21.75125);
+      padding-right: calc(0.0000000625rem + 2.7499999375 * (100vw - 61.99875rem) / 21.75125);
     }
 }
 
-@supports (padding-bottom: clamp( 1.25rem , -9.4388253549rem  +  17.2403884834vw , 5rem )) {
+@supports (padding-bottom: clamp( 0.0000000625rem , -14.2517668992rem  +  22.9871843572vw , 5rem )) {
     .main-cofirmation__top {
-      padding-bottom: clamp( 1.25rem , -9.4388253549rem  +  17.2403884834vw , 5rem );
+      padding-bottom: clamp( 0.0000000625rem , -14.2517668992rem  +  22.9871843572vw , 5rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.25rem , -9.4388253549rem  +  17.2403884834vw , 5rem )) {
+@supports not (padding-bottom: clamp( 0.0000000625rem , -14.2517668992rem  +  22.9871843572vw , 5rem )) {
     .main-cofirmation__top {
-      padding-bottom: calc(1.25rem + 3.75 * (100vw - 61.99875rem) / 21.75125);
+      padding-bottom: calc(0.0000000625rem + 4.9999999375 * (100vw - 61.99875rem) / 21.75125);
     }
 }
 
