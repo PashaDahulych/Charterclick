@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
-
 @charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
 @font-face {
   font-family: GothamPro;
@@ -19058,9 +19058,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .booking-details__wrapper {
-    position: relative;
+    position: static;
     top: 0;
     gap: 0rem;
+    margin-bottom: 0.5rem;
   }
 
   .booking-details__title {
