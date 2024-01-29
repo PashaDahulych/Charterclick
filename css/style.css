@@ -1,6 +1,6 @@
-@charset "UTF-8";
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
+
+@charset "UTF-8";
 
 @font-face {
   font-family: GothamPro;
@@ -18655,15 +18655,50 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 0.5rem;
   }
 
+  .main-cofirmation__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-cofirmation__personal-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
   .main-cofirmation__personal-info:not(:last-child) {
     margin-bottom: 0.5rem;
   }
 
+  .main-cofirmation__options {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
   .main-cofirmation__options:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-cofirmation__warning {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 
   .main-cofirmation__warning:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .main-cofirmation__payment {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     margin-bottom: 1.5rem;
   }
 
@@ -19030,6 +19065,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .booking-details__wrapper {
     position: relative;
     top: 0;
+    gap: 0rem;
   }
 
   .booking-details__title {
@@ -19125,6 +19161,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .booking-details__special-offers {
+    padding: 0rem;
+    border: none;
+  }
+
+  .booking-details__special-offers h3 {
     display: none;
   }
 
