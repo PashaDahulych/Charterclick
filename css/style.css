@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
-
 @font-face {
   font-family: GothamPro;
   font-display: swap;
@@ -2519,6 +2518,10 @@ textarea.input {
   font-weight: 700;
   color: #109EEE;
   border: 0.0625rem solid #109EEE;
+}
+
+.qs-datepicker .qs-square.qs-current + .qs-square.qs-active {
+  color: #fff;
 }
 
 .qs-datepicker .qs-square.qs-current span {
@@ -19053,7 +19056,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .booking-details__wrapper {
     position: static;
-    top: 0;
+    top: 0rem;
     gap: 0rem;
     margin-bottom: 0.5rem;
   }

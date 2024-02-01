@@ -1699,15 +1699,17 @@
         flsModules.select = new SelectConstructor({});
         var datepicker_min = __webpack_require__(448);
         const currentDate = new Date;
-        const day = currentDate.getDate() + 1;
-        const month = currentDate.getMonth() + 1;
-        const year = currentDate.getFullYear();
-        const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${year}`;
+        const tomorrowDate = new Date(currentDate);
+        tomorrowDate.setDate(currentDate.getDate() + 1);
+        const isLastDayOfMonth = currentDate.getDate() === new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+        const minDate = isLastDayOfMonth ? new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1) : tomorrowDate;
         function addLeadingZero(number) {
             return number < 10 ? `0${number}` : number;
         }
-        const minDate = new Date;
-        minDate.setDate(currentDate.getDate() + 1);
+        const day = minDate.getDate();
+        const month = minDate.getMonth() + 1;
+        const year = minDate.getFullYear();
+        const formattedDate = `${addLeadingZero(day)}-${addLeadingZero(month)}-${year}`;
         const dateInputs = document.querySelectorAll("[data-datepicker]");
         dateInputs.forEach((dateInput => {
             dateInput.placeholder = formattedDate;
@@ -1727,13 +1729,14 @@
                     updateDataValue(dateInput, date);
                 }
             });
-            updateDataValue(dateInput, currentDate);
+            updateDataValue(dateInput, minDate);
         }));
         function updateDataValue(input, date) {
             const day = date.getDate();
             const month = date.getMonth() + 1;
             const year = date.getFullYear();
-            const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(month)}.${addLeadingZero(year)}`;
+            const formattedDate = `${addLeadingZero(day)}-${addLeadingZero(month)}-${addLeadingZero(year)}`;
+            input.value = formattedDate;
             input.setAttribute("data-value", formattedDate);
         }
         function ssr_window_esm_isObject(obj) {
@@ -6707,6 +6710,7 @@
             addWindowScrollEvent = true;
             const header = document.querySelector("header.header");
             const headerShow = header.hasAttribute("data-scroll-show");
+            header.dataset.scrollShow && header.dataset.scrollShow;
             const startPoint = header.dataset.scroll ? header.dataset.scroll : 1;
             let scrollDirection = 0;
             let timer;
