@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:800&display=swap);
 
 @font-face {
@@ -12143,6 +12144,7 @@ body::after {
 }
 
 .booking-details {
+  padding-top: 2.5rem;
   padding-bottom: 1.25rem;
 }
 
@@ -12163,7 +12165,6 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.25rem;
-  position: sticky;
 }
 
 .booking-details__title {
@@ -16116,10 +16117,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .booking-details {
-    padding-top: 11.5rem;
-  }
-
-  .booking-details {
     padding-left: 2.0625rem;
   }
 
@@ -16129,10 +16126,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .booking-details__checked-info {
     padding-left: 1.25rem;
-  }
-
-  .booking-details__wrapper {
-    top: 6.25rem;
   }
 
   .booking-details__title {
@@ -19055,8 +19048,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .booking-details__wrapper {
-    position: static;
-    top: 0rem;
     gap: 0rem;
     margin-bottom: 0.5rem;
   }
@@ -21065,10 +21056,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .payment__sub-title {
     padding-left: 0.4375rem;
   }
-
-  .booking-details__wrapper {
-    top: 5rem;
-  }
 }
 
 @media (max-width: 73.125em) {
@@ -21724,10 +21711,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .asked-conf__title {
     font-size: 1rem;
-  }
-
-  .booking-details {
-    padding-top: 2.5rem;
   }
 
   .booking-details {
@@ -24689,18 +24672,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 1rem , -0.425176714rem  +  2.2987184645vw , 1.5rem )) {
     .asked-conf__title {
       font-size: calc(1rem + 0.5 * (100vw - 61.99875rem) / 21.75125);
-    }
-}
-
-@supports (padding-top: clamp( 2.5rem , -23.1531808517rem  +  41.3769323602vw , 11.5rem )) {
-    .booking-details {
-      padding-top: clamp( 2.5rem , -23.1531808517rem  +  41.3769323602vw , 11.5rem );
-    }
-}
-
-@supports not (padding-top: clamp( 2.5rem , -23.1531808517rem  +  41.3769323602vw , 11.5rem )) {
-    .booking-details {
-      padding-top: calc(2.5rem + 9 * (100vw - 61.99875rem) / 21.75125);
     }
 }
 
@@ -30235,18 +30206,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (padding-left: clamp( 0.4375rem , -9.6375rem  +  13vw , 1.25rem )) {
     .payment__sub-title {
       padding-left: calc(0.4375rem + 0.8125 * (100vw - 77.5rem) / 6.25);
-    }
-}
-
-@supports (top: clamp( 5rem , -10.5rem  +  20vw , 6.25rem )) {
-    .booking-details__wrapper {
-      top: clamp( 5rem , -10.5rem  +  20vw , 6.25rem );
-    }
-}
-
-@supports not (top: clamp( 5rem , -10.5rem  +  20vw , 6.25rem )) {
-    .booking-details__wrapper {
-      top: calc(5rem + 1.25 * (100vw - 77.5rem) / 6.25);
     }
 }
 }
