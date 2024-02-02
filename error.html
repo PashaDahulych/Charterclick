@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240108030910">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240202183819">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -139,14 +139,14 @@
 					<form class="search-main__forma" action="#" method="POST" data-one-select>
 						<input type="hidden" name="durationType" value="1" />
 						<div class="search-main__line search-main__line--calendar">
-							<label for="date-popup">Date</label>
+							<label for="datePopup">Date</label>
 							<span class="search-main__icon _icon-calendar"></span>
 							<input id="datePopup" name="form[datePopup]" data-datepicker autocomplete="off" placeholder="22.03.2023" type="text" />
 							<span class="search-main__select-arrow _icon-select-arrow"></span>
 						</div>
 						<div class="search-main__line">
 							<label for="startTimePopup">Start time</label>
-							<select name="form[startTimePopup]" id="startTimePopup" data-class-modif="form-n-a" data-scroll>
+							<select name="form[startTimePopup]" id="startTimePopup" data-class-modif="form-n-a" data-scroll data-show-selected>
 								<option value="00:00">00:00</option>
 								<option value="01:00">01:00</option>
 								<option value="02:00">02:00</option>
@@ -175,7 +175,7 @@
 						</div>
 						<div class="search-main__line">
 							<label for="durationPopup">Duration</label>
-							<select name="form[durationPopup]" id="durationPopup" data-class-modif="form-hors" data-scroll>
+							<select name="form[durationPopup]" id="durationPopup" data-class-modif="form-hors" data-scroll data-show-selected>
 								<option value="1">1 hours</option>
 								<option value="2">2 hours</option>
 								<option value="3">3 hours</option>
@@ -195,7 +195,7 @@
 						</div>
 						<div class="search-main__line">
 							<label for="passengersPopup">Passengers</label>
-							<select name="form[passengersPopup]" id="passengersPopup" data-class-modif="form-passengers" data-scroll>
+							<select name="form[passengersPopup]" id="passengersPopup" data-class-modif="form-passengers" data-scroll data-show-selected>
 								<option value="1">1 passengers</option>
 								<option value="2">2 passengers</option>
 								<option value="3">3 passengers</option>
@@ -243,6 +243,9 @@
 						<div class="form-yacht__line">
 							<label for="startTimeBook">Start time</label>
 							<select name="form[startTimeBook]" data-class-modif="form-n-a-yacht" id="startTimeBook" data-scroll>
+								<option value="Start time" selected>
+									Start time
+								</option>
 								<option value="00:00">00:00</option>
 								<option value="01:00">01:00</option>
 								<option value="02:00">02:00</option>
@@ -256,7 +259,7 @@
 								<option value="10:00">10:00</option>
 								<option value="11:00">11:00</option>
 								<option value="12:00">12:00</option>
-								<option value="13:00" selected>13:00</option>
+								<option value="13:00">13:00</option>
 								<option value="14:00">14:00</option>
 								<option value="15:00">15:00</option>
 								<option value="16:00">16:00</option>
@@ -272,10 +275,11 @@
 						<div class="form-yacht__line">
 							<label for="duration-book">Duration</label>
 							<select name="form[duration-book]" data-class-modif="form-hors-yacht" id="duration-book" data-scroll>
+								<option value="Duration" selected>Duration</option>
 								<option value="1">1 hour</option>
 								<option value="2">2 hours</option>
 								<option value="3">3 hours</option>
-								<option value="4" selected>4 hours</option>
+								<option value="4">4 hours</option>
 								<option value="5">5 hours</option>
 								<option value="6">6 hours</option>
 								<option value="7">7 hours</option>
@@ -289,7 +293,15 @@
 						<div class="form-yacht__line">
 							<label for="passengerBook">Passenger</label>
 							<select name="form[passengerBook]" data-class-modif="form-passengers-yacht" id="passengerBook" data-scroll>
-								<option value="6" selected>6</option>
+								<option value="Passengers" selected>
+									Passengers
+								</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
 								<option value="7">7</option>
 								<option value="8">8</option>
 								<option value="8">9</option>
@@ -298,6 +310,57 @@
 								<option value="12">12</option>
 								<option value="13">13</option>
 								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+								<option value="32">32</option>
+								<option value="33">33</option>
+								<option value="34">34</option>
+								<option value="35">35</option>
+								<option value="36">36</option>
+								<option value="37">37</option>
+								<option value="38">38</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+								<option value="44">44</option>
+								<option value="45">45</option>
+								<option value="46">46</option>
+								<option value="47">47</option>
+								<option value="48">48</option>
+								<option value="49">49</option>
+								<option value="50">50</option>
+								<option value="51">51</option>
+								<option value="52">52</option>
+								<option value="53">53</option>
+								<option value="54">54</option>
+								<option value="55">55</option>
+								<option value="56">56</option>
+								<option value="57">57</option>
+								<option value="58">58</option>
+								<option value="59">59</option>
+								<option value="60">60</option>
+								<option value="61">61</option>
+								<option value="62">62</option>
+								<option value="63">63</option>
+								<option value="64">64</option>
+								<option value="65">65</option>
 							</select>
 						</div>
 						<button type="submit" class="form-yacht__button button">
@@ -310,7 +373,6 @@
 	</div>
 
 	<!-- Form - popups -->
-	<!-- Popup by BEM -->
 	<div id="popup-login" aria-hidden="true" class="popup popup-in">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -333,9 +395,11 @@
 							</button>
 						</div>
 						<div class="form-popup__actions">
-							<button type="submit" class="form-popup__button button button--popup">
-								Log in
-							</button>
+							<div class="form-popup__btn-wrapper">
+								<button type="submit" class="form-popup__button button button--popup">
+									Log in
+								</button>
+							</div>
 							<div class="form-popup__register">
 								<p>Donʼt have an account?</p>
 								<button data-popup="#popup-register" type="button">
@@ -433,7 +497,7 @@
 						<div class="form-popup__as">
 							<h4>do you want to register as</h4>
 							<div class="form-popup__buttons-block">
-								<button type="button">
+								<button type="button" data-popup="#popup-register-as-owner">
 									<span>Owner</span><span class="_icon-info"></span>
 								</button>
 								<div class="form-popup__border-line"></div>
@@ -473,7 +537,7 @@
 		</div>
 	</div>
 
-	<div id="popup-register-as-agent" aria-hidden="true" class="popup popup-in">
+	<div id="popup-register-as-agent" aria-hidden="true" class="popup popup-in agent">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
@@ -524,15 +588,132 @@
 							</div>
 						</div>
 						<div class="form-popup__checkbox checkbox">
-							<input id="agree" data-error="" class="checkbox__input" type="checkbox" value="agree" name="form[]" />
-							<label for="agree" class="checkbox__label"><span class="checkbox__checked"></span><span class="checkbox__text">I agree with Terms and Conditions</span></label>
+							<input id="agreeAgentRegister" data-error="" class="checkbox__input" type="checkbox" value="agree" name="form[]" />
+							<label for="agreeAgentRegister" class="checkbox__label"><span class="checkbox__checked"></span><span class="checkbox__text">I agree with Terms and Conditions</span></label>
 						</div>
 						<div class="form-popup__actions">
-							<button type="submit" class="form-popup__button button button--popup">
-								Next
-							</button>
+							<div class="form-popup__btn-wrapper">
+								<button type="button" class="form-popup__back-btn">
+									<span class="_icon-big-arrow"></span> Back
+								</button>
+								<button type="submit" class="form-popup__button button button--popup">
+									Register
+								</button>
+							</div>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-register-as-owner" aria-hidden="true" class="popup popup-in owner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-in__wrapper">
+					<form class="popup-in__form form-popup" action="#" method="POST">
+						<div class="popup-in__title">
+							<h2>Register</h2>
+							<h4>as Owner</h4>
+						</div>
+						<div class="form-popup__lines-wrapper">
+							<h5>Tell us about yourself</h5>
+							<div class="form-popup__user-line">
+								<div class="form-popup__line">
+									<input type="text" name="form[registerUsOwnerfNname]" autocomplete="off" required data-error="" placeholder="First name" class="input" />
+								</div>
+								<div class="form-popup__line">
+									<input type="text" name="form[regiserUsOwnerlName]" autocomplete="off" required data-error="" placeholder="Last name" class="input" />
+								</div>
+							</div>
+							<div class="form-popup__line">
+								<input type="tel" name="form[registerUsOwnerTelNumber]" autocomplete="off" required data-error="" placeholder="Your Phone Number" class="input" />
+							</div>
+							<div class="form-popup__line">
+								<input type="email" name="form[registerUsOwnerEmail]" autocomplete="off" required data-error="" placeholder="Your email address" class="input" />
+							</div>
+							<p>
+								To register, you will need to confirm this email
+								address
+							</p>
+						</div>
+						<div class="form-popup__actions">
+							<div class="form-popup__btn-wrapper">
+								<button type="button" class="form-popup__back-btn">
+									<span class="_icon-big-arrow"></span> Back
+								</button>
+								<button data-popup="#popup-register-as-owner-finish" type="button" class="form-popup__button button button--popup">
+									Next
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-register-as-owner-finish" aria-hidden="true" class="popup popup-in owner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup-in__wrapper">
+					<form class="popup-in__form form-popup" action="#" method="POST">
+						<div class="popup-in__title">
+							<h2>Register</h2>
+							<h4>as Owner</h4>
+						</div>
+						<div class="form-popup__lines-wrapper">
+							<h5>Tell us about yourself</h5>
+							<h6>
+								This data will be provided to customers in the
+								confirmation email.
+							</h6>
+							<div class="form-popup__line">
+								<input type="text" name="form[registerUsOwnerCompName]" autocomplete="off" required data-error="" placeholder="Company name" class="input" />
+							</div>
+							<div class="form-popup__line">
+								<input type="tel" name="form[registerUsOwnerCopmTelNumber]" autocomplete="off" required data-error="" placeholder="Company phone number" class="input" />
+							</div>
+							<div class="form-popup__line">
+								<input type="email" name="form[registerUsOwnerCompEmail]" autocomplete="off" required data-error="" placeholder="Company email address" class="input" />
+							</div>
+						</div>
+						<div class="form-popup__checkbox checkbox">
+							<input id="agreeCompRegister" data-error="" class="checkbox__input" type="checkbox" value="agree" name="form[]" />
+							<label for="agreeCompRegister" class="checkbox__label"><span class="checkbox__checked"></span><span class="checkbox__text">I agree with Terms and Conditions</span></label>
+						</div>
+						<div class="form-popup__actions">
+							<div class="form-popup__btn-wrapper">
+								<button type="button" class="form-popup__back-btn">
+									<span class="_icon-big-arrow"></span> Back
+								</button>
+								<button data-popup="#thanks" type="submit" class="form-popup__button button button--popup">
+									Register
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="thanks" aria-hidden="true" class="popup thanks">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="thanks__body">
+					<h3>Thank you!</h3>
+					<div class="thanks__text">
+						<p>
+							We've sent an email to
+							<span>Youremail@gmail.com.</span> Check your inbox and
+							verify your email please. If you have not received it
+							please contact us to <a href="mailto:info@charterclick.com.">info@charterclick.com.</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -575,10 +756,17 @@
 						</div>
 						<div class="apply-offers__line">
 							<label for="startTimePopupApplyOffers">Start time</label>
-							<select name="form[startTimePopupApplyOffers]" id="startTimePopupApplyOffers" data-class-modif="form-n-a-apply-offers" data-scroll>
-								<option value="7:00">7:00</option>
-								<option value="8:00" selected>8:00</option>
-								<option value="9:00">9:00</option>
+							<select name="form[startTimePopupApplyOffers]" id="startTimePopupApplyOffers" data-class-modif="form-n-a-apply-offers" data-scroll data-show-selected>
+								<option value="00:00">00:00</option>
+								<option value="01:00">01:00</option>
+								<option value="02:00">02:00</option>
+								<option value="03:00">03:00</option>
+								<option value="04:00">04:00</option>
+								<option value="05:00">05:00</option>
+								<option value="06:00">06:00</option>
+								<option value="07:00">07:00</option>
+								<option value="08:00" selected>08:00</option>
+								<option value="09:00">09:00</option>
 								<option value="10:00">10:00</option>
 								<option value="11:00">11:00</option>
 								<option value="12:00">12:00</option>
@@ -594,7 +782,7 @@
 						</div>
 						<div class="apply-offers__line">
 							<label for="durationPopupApplyOffers">Duration</label>
-							<select name="formdurationPopupApplyOffers]" id="durationPopupApplyOffers" data-class-modif="form-hors-apply-offers" data-scroll>
+							<select name="formdurationPopupApplyOffers]" id="durationPopupApplyOffers" data-class-modif="form-hors-apply-offers" data-scroll data-show-selected>
 								<option value="1">1 hours</option>
 								<option value="2">2 hours</option>
 								<option value="3">3 hours</option>
@@ -614,7 +802,7 @@
 						</div>
 						<div class="apply-offers__line">
 							<label for="passengersPopupApplyOffers">Passengers</label>
-							<select name="form[passengersPopupApplyOffers]" id="passengersPopupApplyOffers" data-class-modif="form-passengers-apply-offers" data-scroll>
+							<select name="form[passengersPopupApplyOffers]" id="passengersPopupApplyOffers" data-class-modif="form-passengers-apply-offers" data-scroll data-show-selected>
 								<option value="1">1 passengers</option>
 								<option value="2">2 passengers</option>
 								<option value="3">3 passengers</option>
@@ -638,7 +826,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20240108030910"></script>
+	<script src="js/app.min.js?_v=20240202183819"></script>
 </body>
 
 </html>
