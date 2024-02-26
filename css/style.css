@@ -5842,10 +5842,10 @@ body::after {
           transform: translate3d(0%, 0%, 0px);
   opacity: 1;
   will-change: transform;
-  -webkit-transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-  transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-  transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s;
-  transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+  -webkit-transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+  transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+  transition: transform 1.5s linear 0s, opacity 1.5s linear 0s;
+  transition: transform 1.5s linear 0s, opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
 }
 
 .page__rental {
@@ -6020,8 +6020,8 @@ body::after {
 .search-main {
   border-radius: 0.625rem;
   background-color: #fff;
-  -webkit-box-shadow: 0px 7px 8px 0px rgba(72, 119, 145, 0.2), 0px 5px 22px 0px rgba(72, 119, 145, 0.12), 0px 12px 17px 0px rgba(72, 119, 145, 0.14);
-          box-shadow: 0px 7px 8px 0px rgba(72, 119, 145, 0.2), 0px 5px 22px 0px rgba(72, 119, 145, 0.12), 0px 12px 17px 0px rgba(72, 119, 145, 0.14);
+  -webkit-box-shadow: 0rem 0.4375rem 0.5rem 0rem rgba(72, 119, 145, 0.2), 0rem 0.3125rem 1.375rem 0rem rgba(72, 119, 145, 0.12), 0rem 0.75rem 1.0625rem 0rem rgba(72, 119, 145, 0.14);
+          box-shadow: 0rem 0.4375rem 0.5rem 0rem rgba(72, 119, 145, 0.2), 0rem 0.3125rem 1.375rem 0rem rgba(72, 119, 145, 0.12), 0rem 0.75rem 1.0625rem 0rem rgba(72, 119, 145, 0.14);
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
   -webkit-transition: padding 0.3s ease 0s;
@@ -17036,10 +17036,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-    transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+    transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, opacity 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
     will-change: transform;
   }
 
@@ -17047,85 +17047,85 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1.5s ease-in-out 0.9s, -webkit-transform 1.5s ease-in-out 0.9s;
-    transition: opacity 1.5s ease-in-out 0.9s, -webkit-transform 1.5s ease-in-out 0.9s;
-    transition: transform 1.5s ease-in-out 0.9s, opacity 1.5s ease-in-out 0.9s;
-    transition: transform 1.5s ease-in-out 0.9s, opacity 1.5s ease-in-out 0.9s, -webkit-transform 1.5s ease-in-out 0.9s;
+    -webkit-transition: opacity 1.5s linear 0.9s, -webkit-transform 1.5s linear 0.9s;
+    transition: opacity 1.5s linear 0.9s, -webkit-transform 1.5s linear 0.9s;
+    transition: transform 1.5s linear 0.9s, opacity 1.5s linear 0.9s;
+    transition: transform 1.5s linear 0.9s, opacity 1.5s linear 0.9s, -webkit-transform 1.5s linear 0.9s;
     will-change: transform;
   }
 
   .page__trending._watcher-view .trending__card:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.3s;
+    transition: -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(5) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.3s;
+    transition: -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.3s;
+    transition: -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
     will-change: transform;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(7) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.6s;
-    transition: -webkit-transform 1.5s ease-in-out 0.6s;
-    transition: transform 1.5s ease-in-out 0.6s;
-    transition: transform 1.5s ease-in-out 0.6s, -webkit-transform 1.5s ease-in-out 0.6s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.6s;
+    transition: -webkit-transform 1.5s linear 0.6s;
+    transition: transform 1.5s linear 0.6s;
+    transition: transform 1.5s linear 0.6s, -webkit-transform 1.5s linear 0.6s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(8) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     will-change: transform;
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.6s;
-    transition: -webkit-transform 1.5s ease-in-out 0.6s;
-    transition: transform 1.5s ease-in-out 0.6s;
-    transition: transform 1.5s ease-in-out 0.6s, -webkit-transform 1.5s ease-in-out 0.6s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.6s;
+    transition: -webkit-transform 1.5s linear 0.6s;
+    transition: transform 1.5s linear 0.6s;
+    transition: transform 1.5s linear 0.6s, -webkit-transform 1.5s linear 0.6s;
   }
 
   .page__rental h2 {
@@ -17327,10 +17327,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.8s ease-out 0s, -webkit-transform 1.8s ease-out 0s;
-    transition: opacity 1.8s ease-out 0s, -webkit-transform 1.8s ease-out 0s;
-    transition: transform 1.8s ease-out 0s, opacity 1.8s ease-out 0s;
-    transition: transform 1.8s ease-out 0s, opacity 1.8s ease-out 0s, -webkit-transform 1.8s ease-out 0s;
+    -webkit-transition: opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
+    transition: opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
+    transition: transform 1.8s linear 0s, opacity 1.8s linear 0s;
+    transition: transform 1.8s linear 0s, opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
   }
 
   .page__asked h2 {
@@ -17349,10 +17349,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
+    -webkit-transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
   }
 
   .page__testination h2 {
@@ -17372,21 +17372,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
-    transition: opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
-    transition: transform 1.6s ease-in-out, opacity 1.6s ease-in-out;
-    transition: transform 1.6s ease-in-out, opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
+    -webkit-transition: opacity 1.6s linear, -webkit-transform 1.6s linear;
+    transition: opacity 1.6s linear, -webkit-transform 1.6s linear;
+    transition: transform 1.6s linear, opacity 1.6s linear;
+    transition: transform 1.6s linear, opacity 1.6s linear, -webkit-transform 1.6s linear;
   }
 
   .page__testination._watcher-view .testination__action {
-    -webkit-transform: translate3d(0%, 0%, 3d 0px 0%);
-            transform: translate3d(0%, 0%, 3d 0px 0%);
+    -webkit-transform: translate3d(0%, 0%, 0px);
+            transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
-    transition: opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
-    transition: transform 1.6s ease-in-out, opacity 1.6s ease-in-out;
-    transition: transform 1.6s ease-in-out, opacity 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
+    -webkit-transition: opacity 1.6s linear, -webkit-transform 1.6s linear;
+    transition: opacity 1.6s linear, -webkit-transform 1.6s linear;
+    transition: transform 1.6s linear, opacity 1.6s linear;
+    transition: transform 1.6s linear, opacity 1.6s linear, -webkit-transform 1.6s linear;
   }
 
   .page__blog h2 {
@@ -17423,10 +17423,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
-    transition: opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
-    transition: transform 1.4s ease-in-out 0s, opacity 1.4s ease-in-out 0s;
-    transition: transform 1.4s ease-in-out 0s, opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
+    -webkit-transition: opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
+    transition: opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
+    transition: transform 1.4s linear 0s, opacity 1.4s linear 0s;
+    transition: transform 1.4s linear 0s, opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
   }
 
   .page__blog._watcher-view .blog-page__big-card {
@@ -17434,10 +17434,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
-    transition: opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
-    transition: transform 1.4s ease-in-out 0s, opacity 1.4s ease-in-out 0s;
-    transition: transform 1.4s ease-in-out 0s, opacity 1.4s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0s;
+    -webkit-transition: opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
+    transition: opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
+    transition: transform 1.4s linear 0s, opacity 1.4s linear 0s;
+    transition: transform 1.4s linear 0s, opacity 1.4s linear 0s, -webkit-transform 1.4s linear 0s;
   }
 
   .page__blog._watcher-view .blog-page__card {
@@ -17445,10 +17445,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.4s ease-in-out 0.8s, -webkit-transform 1.4s ease-in-out 0.8s;
-    transition: opacity 1.4s ease-in-out 0.8s, -webkit-transform 1.4s ease-in-out 0.8s;
-    transition: transform 1.4s ease-in-out 0.8s, opacity 1.4s ease-in-out 0.8s;
-    transition: transform 1.4s ease-in-out 0.8s, opacity 1.4s ease-in-out 0.8s, -webkit-transform 1.4s ease-in-out 0.8s;
+    -webkit-transition: opacity 1.4s linear 0.8s, -webkit-transform 1.4s linear 0.8s;
+    transition: opacity 1.4s linear 0.8s, -webkit-transform 1.4s linear 0.8s;
+    transition: transform 1.4s linear 0.8s, opacity 1.4s linear 0.8s;
+    transition: transform 1.4s linear 0.8s, opacity 1.4s linear 0.8s, -webkit-transform 1.4s linear 0.8s;
   }
 
   .page__blog._watcher-view .blog-page__card--small-picture {
@@ -17456,10 +17456,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.4s ease-in-out 1.35s, -webkit-transform 1.4s ease-in-out 1.35s;
-    transition: opacity 1.4s ease-in-out 1.35s, -webkit-transform 1.4s ease-in-out 1.35s;
-    transition: transform 1.4s ease-in-out 1.35s, opacity 1.4s ease-in-out 1.35s;
-    transition: transform 1.4s ease-in-out 1.35s, opacity 1.4s ease-in-out 1.35s, -webkit-transform 1.4s ease-in-out 1.35s;
+    -webkit-transition: opacity 1.4s linear 1.35s, -webkit-transform 1.4s linear 1.35s;
+    transition: opacity 1.4s linear 1.35s, -webkit-transform 1.4s linear 1.35s;
+    transition: transform 1.4s linear 1.35s, opacity 1.4s linear 1.35s;
+    transition: transform 1.4s linear 1.35s, opacity 1.4s linear 1.35s, -webkit-transform 1.4s linear 1.35s;
   }
 
   .page__blog._watcher-view .blog-page__actions {
@@ -17467,10 +17467,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.4s ease-in-out 0.8s, color 0.3s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0.8s;
-    transition: opacity 1.4s ease-in-out 0.8s, color 0.3s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0.8s;
-    transition: transform 1.4s ease-in-out 0.8s, opacity 1.4s ease-in-out 0.8s, color 0.3s ease-in-out 0s;
-    transition: transform 1.4s ease-in-out 0.8s, opacity 1.4s ease-in-out 0.8s, color 0.3s ease-in-out 0s, -webkit-transform 1.4s ease-in-out 0.8s;
+    -webkit-transition: opacity 1.4s linear 0.8s, color 0.3s linear 0s, -webkit-transform 1.4s linear 0.8s;
+    transition: opacity 1.4s linear 0.8s, color 0.3s linear 0s, -webkit-transform 1.4s linear 0.8s;
+    transition: transform 1.4s linear 0.8s, opacity 1.4s linear 0.8s, color 0.3s linear 0s;
+    transition: transform 1.4s linear 0.8s, opacity 1.4s linear 0.8s, color 0.3s linear 0s, -webkit-transform 1.4s linear 0.8s;
   }
 
   .page__partner h2 {
@@ -17483,14 +17483,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page__partner._watcher-view h2 {
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out 0s;
-    transition: opacity 1.4s ease-in-out 0s;
+    -webkit-transition: opacity 1.4s linear 0s;
+    transition: opacity 1.4s linear 0s;
   }
 
   .page__partner._watcher-view .partner__wrapper {
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out 0s;
-    transition: opacity 1.4s ease-in-out 0s;
+    -webkit-transition: opacity 1.4s linear 0s;
+    transition: opacity 1.4s linear 0s;
   }
 
   .page__partner._watcher-view .partner__swiper-pagination {
@@ -17498,10 +17498,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.7s ease-in-out 0.4s, -webkit-transform 1.7s ease-in-out 0.4s;
-    transition: opacity 1.7s ease-in-out 0.4s, -webkit-transform 1.7s ease-in-out 0.4s;
-    transition: transform 1.7s ease-in-out 0.4s, opacity 1.7s ease-in-out 0.4s;
-    transition: transform 1.7s ease-in-out 0.4s, opacity 1.7s ease-in-out 0.4s, -webkit-transform 1.7s ease-in-out 0.4s;
+    -webkit-transition: opacity 1.7s linear 0.4s, -webkit-transform 1.7s linear 0.4s;
+    transition: opacity 1.7s linear 0.4s, -webkit-transform 1.7s linear 0.4s;
+    transition: transform 1.7s linear 0.4s, opacity 1.7s linear 0.4s;
+    transition: transform 1.7s linear 0.4s, opacity 1.7s linear 0.4s, -webkit-transform 1.7s linear 0.4s;
   }
 
   .main._watcher-view .slide-main__wrapper {
@@ -17509,10 +17509,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     visibility: visible;
-    -webkit-transition: opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
-    transition: opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
-    transition: transform 1.4s ease-in-out 0.4s, opacity 1.4s ease-in-out 0.4s;
-    transition: transform 1.4s ease-in-out 0.4s, opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
+    -webkit-transition: opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
+    transition: opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
+    transition: transform 1.4s linear 0.4s, opacity 1.4s linear 0.4s;
+    transition: transform 1.4s linear 0.4s, opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
   }
 
   .main._watcher-view .main__search {
@@ -17520,10 +17520,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(-50%, 50%, 0px);
             transform: translate3d(-50%, 50%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
-    transition: opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
-    transition: transform 1.4s ease-in-out 0.4s, opacity 1.4s ease-in-out 0.4s;
-    transition: transform 1.4s ease-in-out 0.4s, opacity 1.4s ease-in-out 0.4s, -webkit-transform 1.4s ease-in-out 0.4s;
+    -webkit-transition: opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
+    transition: opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
+    transition: transform 1.4s linear 0.4s, opacity 1.4s linear 0.4s;
+    transition: transform 1.4s linear 0.4s, opacity 1.4s linear 0.4s, -webkit-transform 1.4s linear 0.4s;
   }
 
   .main__search {
@@ -17630,8 +17630,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page__testination._watcher-view .testination__slider {
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out;
-    transition: opacity 1.4s ease-in-out;
+    -webkit-transition: opacity 1.4s linear;
+    transition: opacity 1.4s linear;
     will-change: transform;
   }
 }
@@ -17679,10 +17679,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
+    -webkit-transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
   }
 
   .page__asked._watcher-view .asked__answers {
@@ -17697,10 +17697,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.8s ease-in-out 0s, -webkit-transform 1.8s ease-in-out 0s;
-    transition: opacity 1.8s ease-in-out 0s, -webkit-transform 1.8s ease-in-out 0s;
-    transition: transform 1.8s ease-in-out 0s, opacity 1.8s ease-in-out 0s;
-    transition: transform 1.8s ease-in-out 0s, opacity 1.8s ease-in-out 0s, -webkit-transform 1.8s ease-in-out 0s;
+    -webkit-transition: opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
+    transition: opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
+    transition: transform 1.8s linear 0s, opacity 1.8s linear 0s;
+    transition: transform 1.8s linear 0s, opacity 1.8s linear 0s, -webkit-transform 1.8s linear 0s;
   }
 }
 
@@ -17719,31 +17719,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: opacity 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, opacity 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, opacity 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: opacity 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
+    transition: opacity 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, opacity 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, opacity 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(4) {
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(7) {
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.3s;
+    transition: -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(8) {
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: -webkit-transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s;
-    transition: transform 1.5s ease-in-out 0.3s, -webkit-transform 1.5s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.3s;
+    transition: -webkit-transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s;
+    transition: transform 1.5s linear 0.3s, -webkit-transform 1.5s linear 0.3s;
   }
 }
 
@@ -29572,40 +29572,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .page__hottest._watcher-view .hottest__card:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: -webkit-transform 1.5s linear 0s;
+    transition: -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s, -webkit-transform 1.5s ease-in-out 0.4s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.4s;
+    transition: -webkit-transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s, -webkit-transform 1.5s linear 0.4s;
     will-change: transform;
   }
 
@@ -29613,20 +29613,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0px);
         -ms-transform: translate(0%, 0px);
             transform: translate(0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s, -webkit-transform 1.5s ease-in-out 0.4s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.4s;
+    transition: -webkit-transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s, -webkit-transform 1.5s linear 0.4s;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: -webkit-transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s;
-    transition: transform 1.5s ease-in-out 0.4s, -webkit-transform 1.5s ease-in-out 0.4s;
+    -webkit-transition: -webkit-transform 1.5s linear 0.4s;
+    transition: -webkit-transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s;
+    transition: transform 1.5s linear 0.4s, -webkit-transform 1.5s linear 0.4s;
     will-change: transform;
   }
 
@@ -29643,68 +29643,68 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page__testination._watcher-view .testination__wrapper {
     opacity: 1;
-    -webkit-transition: opacity 1.4s ease-in-out;
-    transition: opacity 1.4s ease-in-out;
+    -webkit-transition: opacity 1.4s linear;
+    transition: opacity 1.4s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out;
-    transition: -webkit-transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out, -webkit-transform 1.4s ease-in-out;
+    -webkit-transition: -webkit-transform 1.4s linear;
+    transition: -webkit-transform 1.4s linear;
+    transition: transform 1.4s linear;
+    transition: transform 1.4s linear, -webkit-transform 1.4s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out;
-    transition: -webkit-transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out, -webkit-transform 1.4s ease-in-out;
+    -webkit-transition: -webkit-transform 1.4s linear;
+    transition: -webkit-transform 1.4s linear;
+    transition: transform 1.4s linear;
+    transition: transform 1.4s linear, -webkit-transform 1.4s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out;
-    transition: -webkit-transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out;
-    transition: transform 1.4s ease-in-out, -webkit-transform 1.4s ease-in-out;
+    -webkit-transition: -webkit-transform 1.4s linear;
+    transition: -webkit-transform 1.4s linear;
+    transition: transform 1.4s linear;
+    transition: transform 1.4s linear, -webkit-transform 1.4s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s, -webkit-transform 1.4s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.4s linear 0.3s;
+    transition: -webkit-transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s, -webkit-transform 1.4s linear 0.3s;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(5) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s, -webkit-transform 1.4s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.4s linear 0.3s;
+    transition: -webkit-transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s, -webkit-transform 1.4s linear 0.3s;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: -webkit-transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s;
-    transition: transform 1.4s ease-in-out 0.3s, -webkit-transform 1.4s ease-in-out 0.3s;
+    -webkit-transition: -webkit-transform 1.4s linear 0.3s;
+    transition: -webkit-transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s;
+    transition: transform 1.4s linear 0.3s, -webkit-transform 1.4s linear 0.3s;
     will-change: transform;
   }
 }
@@ -29727,10 +29727,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-    transition: opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s;
-    transition: transform 1.5s ease-in-out 0s, opacity 1.5s ease-in-out 0s, -webkit-transform 1.5s ease-in-out 0s;
+    -webkit-transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+    transition: opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, opacity 1.5s linear 0s;
+    transition: transform 1.5s linear 0s, opacity 1.5s linear 0s, -webkit-transform 1.5s linear 0s;
   }
 
   .page__asked._watcher-view .asked__slider {
@@ -29738,10 +29738,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s;
-    transition: transform 1.6s ease-in-out 0s, opacity 1.6s ease-in-out 0s, -webkit-transform 1.6s ease-in-out 0s;
+    -webkit-transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s;
+    transition: transform 1.6s linear 0s, opacity 1.6s linear 0s, -webkit-transform 1.6s linear 0s;
   }
 }
 
