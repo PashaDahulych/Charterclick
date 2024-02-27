@@ -6574,6 +6574,7 @@
                 this.config = Object.assign(defaultConfig, props);
                 this.observer;
                 !document.documentElement.classList.contains("watcher") ? this.scrollWatcherRun() : null;
+                window.addEventListener("wheel", this.handleWheelEvent.bind(this));
             }
             scrollWatcherUpdate() {
                 this.scrollWatcherRun();
@@ -6653,6 +6654,13 @@
                     detail: {
                         entry
                     }
+                }));
+            }
+            handleWheelEvent(event) {
+                const scrollSpeed = Math.abs(event.deltaY);
+                const elementsToAnimate = document.querySelectorAll("[data-watch]");
+                elementsToAnimate.forEach((element => {
+                    element.style.transitionDuration = `${scrollSpeed / 1e3}s`;
                 }));
             }
         }
