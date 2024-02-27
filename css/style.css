@@ -5842,10 +5842,10 @@ body::after {
           transform: translate3d(0%, 0%, 0px);
   opacity: 1;
   will-change: transform;
-  -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-  transition: opacity 1s linear, -webkit-transform 1s linear;
-  transition: transform 1s linear, opacity 1s linear;
-  transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+  -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+  transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+  transition: transform 0.8s linear, opacity 0.8s linear;
+  transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
 }
 
 .page__rental {
@@ -5956,11 +5956,6 @@ body::after {
   position: relative;
   z-index: 2;
   overflow: hidden;
-}
-
-.slide-main__wrapper {
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
 }
 
 .slide-main__wrapper h1 {
@@ -17035,17 +17030,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .page__trending .trending__action {
     -webkit-transform: translate3d(0%, 100%, 0px);
             transform: translate3d(0%, 100%, 0px);
-    opacity: 0;
   }
 
   .page__trending._watcher-view h2 {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
@@ -17053,85 +17047,85 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.9s, -webkit-transform 1s linear 0.9s;
-    transition: opacity 1s linear 0.9s, -webkit-transform 1s linear 0.9s;
-    transition: transform 1s linear 0.9s, opacity 1s linear 0.9s;
-    transition: transform 1s linear 0.9s, opacity 1s linear 0.9s, -webkit-transform 1s linear 0.9s;
+    -webkit-transition: opacity 0.8s linear 0.9s, -webkit-transform 0.8s linear 0.9s;
+    transition: opacity 0.8s linear 0.9s, -webkit-transform 0.8s linear 0.9s;
+    transition: transform 0.8s linear 0.9s, opacity 0.8s linear 0.9s;
+    transition: transform 0.8s linear 0.9s, opacity 0.8s linear 0.9s, -webkit-transform 0.8s linear 0.9s;
     will-change: transform;
   }
 
   .page__trending._watcher-view .trending__card:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(5) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(7) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.8s;
-    transition: -webkit-transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.8s;
+    transition: -webkit-transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(8) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     will-change: transform;
-    -webkit-transition: -webkit-transform 1s linear 0.8s;
-    transition: -webkit-transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.8s;
+    transition: -webkit-transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
   }
 
   .page__rental h2 {
@@ -17167,20 +17161,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__rental._watcher-view .rental__answers {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__services-galery h2 {
@@ -17206,10 +17200,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:first-of-type {
@@ -17217,10 +17211,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(2) {
@@ -17228,10 +17222,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(3) {
@@ -17239,10 +17233,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(4) {
@@ -17250,10 +17244,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(5) {
@@ -17261,10 +17255,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(6) {
@@ -17272,10 +17266,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(7) {
@@ -17283,10 +17277,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
+    -webkit-transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(8) {
@@ -17294,10 +17288,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
+    -webkit-transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__article:nth-of-type(9) {
@@ -17305,10 +17299,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s;
-    transition: transform 1s linear 0.6s, opacity 1s linear 0.6s, -webkit-transform 1s linear 0.6s;
+    -webkit-transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s;
+    transition: transform 0.8s linear 0.6s, opacity 0.8s linear 0.6s, -webkit-transform 0.8s linear 0.6s;
   }
 
   .page__services-galery._watcher-view .galery-sercices__action {
@@ -17316,10 +17310,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
-    transition: opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
+    -webkit-transition: opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
+    transition: opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
   }
 
   .page__register .register__wrapper {
@@ -17333,10 +17327,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1.4s linear, -webkit-transform 1.4s linear;
-    transition: opacity 1.4s linear, -webkit-transform 1.4s linear;
-    transition: transform 1.4s linear, opacity 1.4s linear;
-    transition: transform 1.4s linear, opacity 1.4s linear, -webkit-transform 1.4s linear;
+    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
+    transition: opacity 1s linear, -webkit-transform 1s linear;
+    transition: transform 1s linear, opacity 1s linear;
+    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
   }
 
   .page__asked h2 {
@@ -17355,10 +17349,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__testination h2 {
@@ -17378,10 +17372,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__testination._watcher-view .testination__action {
@@ -17389,10 +17383,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__blog h2 {
@@ -17429,10 +17423,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__blog._watcher-view .blog-page__big-card {
@@ -17440,10 +17434,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__blog._watcher-view .blog-page__card {
@@ -17451,10 +17445,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__blog._watcher-view .blog-page__card--small-picture {
@@ -17462,10 +17456,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
-    transition: opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s, -webkit-transform 1s linear 0.8s;
+    -webkit-transition: opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
+    transition: opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s, -webkit-transform 0.8s linear 0.8s;
   }
 
   .page__blog._watcher-view .blog-page__actions {
@@ -17473,10 +17467,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.8s, color 0.3s ease, -webkit-transform 1s linear 0.8s;
-    transition: opacity 1s linear 0.8s, color 0.3s ease, -webkit-transform 1s linear 0.8s;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s, color 0.3s ease;
-    transition: transform 1s linear 0.8s, opacity 1s linear 0.8s, color 0.3s ease, -webkit-transform 1s linear 0.8s;
+    -webkit-transition: opacity 0.8s linear 0.8s, color 0.3s ease, -webkit-transform 0.8s linear 0.8s;
+    transition: opacity 0.8s linear 0.8s, color 0.3s ease, -webkit-transform 0.8s linear 0.8s;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s, color 0.3s ease;
+    transition: transform 0.8s linear 0.8s, opacity 0.8s linear 0.8s, color 0.3s ease, -webkit-transform 0.8s linear 0.8s;
   }
 
   .page__partner h2 {
@@ -17504,10 +17498,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .main._watcher-view .slide-main__wrapper {
@@ -17515,10 +17509,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     visibility: visible;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .main._watcher-view .main__search {
@@ -17526,10 +17520,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(-50%, 50%, 0px);
             transform: translate3d(-50%, 50%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .main__search {
@@ -17545,8 +17539,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .slide-main__wrapper {
     position: relative;
-    -webkit-transform: translate3d(-50%, 0%, 0px);
-            transform: translate3d(-50%, 0%, 0px);
+    -webkit-transform: translate3d(-100%, 0%, 0px);
+            transform: translate3d(-100%, 0%, 0px);
     opacity: 0;
     visibility: hidden;
   }
@@ -17636,9 +17630,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page__testination._watcher-view .testination__slider {
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s;
-    will-change: transform;
+    -webkit-transition: opacity 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s;
   }
 }
 
@@ -17648,10 +17641,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__rental._watcher-view .rental__answers {
@@ -17659,10 +17652,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, opacity 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, opacity 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__asked h2 {
@@ -17685,10 +17678,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__asked._watcher-view .asked__answers {
@@ -17725,31 +17718,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
-    -webkit-transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s;
-    transition: transform 1s linear 0.2s, opacity 1s linear 0.2s, -webkit-transform 1s linear 0.2s;
+    -webkit-transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s;
+    transition: transform 0.8s linear 0.2s, opacity 0.8s linear 0.2s, -webkit-transform 0.8s linear 0.2s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(4) {
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(7) {
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 
   .page__trending._watcher-view .trending__card:nth-of-type(8) {
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
   }
 }
 
@@ -29578,40 +29571,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .page__hottest._watcher-view .hottest__card:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
@@ -29619,20 +29612,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(0%, 0px);
         -ms-transform: translate(0%, 0px);
             transform: translate(0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
   .page__hottest._watcher-view .hottest__card:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
@@ -29649,68 +29642,67 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page__testination._watcher-view .testination__wrapper {
     opacity: 1;
-    -webkit-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-    will-change: transform;
+    -webkit-transition: opacity 0.8s linear;
+    transition: opacity 0.8s linear;
   }
 
   .page__testination._watcher-view .testination__article:first-of-type {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(2) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(3) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear;
-    transition: -webkit-transform 1s linear;
-    transition: transform 1s linear;
-    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: -webkit-transform 0.8s linear;
+    transition: -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear;
+    transition: transform 0.8s linear, -webkit-transform 0.8s linear;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(4) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(5) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 
   .page__testination._watcher-view .testination__article:nth-of-type(6) {
     -webkit-transform: translate3d(0%, 0%, 0px);
             transform: translate3d(0%, 0%, 0px);
-    -webkit-transition: -webkit-transform 1s linear 0.4s;
-    transition: -webkit-transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s;
-    transition: transform 1s linear 0.4s, -webkit-transform 1s linear 0.4s;
+    -webkit-transition: -webkit-transform 0.8s linear 0.4s;
+    transition: -webkit-transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s;
+    transition: transform 0.8s linear 0.4s, -webkit-transform 0.8s linear 0.4s;
     will-change: transform;
   }
 }
@@ -29733,10 +29725,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 
   .page__asked._watcher-view .asked__slider {
@@ -29744,10 +29736,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             transform: translate3d(0%, 0%, 0px);
     opacity: 1;
     will-change: transform;
-    -webkit-transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: opacity 1s linear, -webkit-transform 1s linear;
-    transition: transform 1s linear, opacity 1s linear;
-    transition: transform 1s linear, opacity 1s linear, -webkit-transform 1s linear;
+    -webkit-transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: opacity 0.8s linear, -webkit-transform 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear;
+    transition: transform 0.8s linear, opacity 0.8s linear, -webkit-transform 0.8s linear;
   }
 }
 
