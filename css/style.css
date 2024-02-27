@@ -5955,6 +5955,12 @@ body::after {
 .slide-main__container {
   position: relative;
   z-index: 2;
+  overflow: hidden;
+}
+
+.slide-main__wrapper {
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .slide-main__wrapper h1 {

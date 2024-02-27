@@ -6633,13 +6633,10 @@
                 items.forEach((item => this.observer.observe(item)));
             }
             scrollWatcherIntersecting(entry, targetElement) {
+                const watchOnce = targetElement.getAttribute("data-watch-once");
                 if (entry.isIntersecting) {
-                    !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я бачу ${targetElement.classList}, додав клас _watcher-view`);
-                } else {
-                    targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я не бачу ${targetElement.classList}, прибрав клас _watcher-view`);
-                }
+                    if (!watchOnce || watchOnce.toLowerCase() === "false") !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
+                } else if (!watchOnce || watchOnce.toLowerCase() === "false") targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
             }
             scrollWatcherOff(targetElement, observer) {
                 observer.unobserve(targetElement);
