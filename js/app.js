@@ -6574,6 +6574,7 @@
                 this.config = Object.assign(defaultConfig, props);
                 this.observer;
                 !document.documentElement.classList.contains("watcher") ? this.scrollWatcherRun() : null;
+                window.addEventListener("wheel", this.handleWheelEvent.bind(this));
             }
             scrollWatcherUpdate() {
                 this.scrollWatcherRun();
@@ -6633,13 +6634,10 @@
                 items.forEach((item => this.observer.observe(item)));
             }
             scrollWatcherIntersecting(entry, targetElement) {
+                const watchOnce = targetElement.getAttribute("data-watch-once");
                 if (entry.isIntersecting) {
-                    !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я бачу ${targetElement.classList}, додав клас _watcher-view`);
-                } else {
-                    targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
-                    this.scrollWatcherLogging(`Я не бачу ${targetElement.classList}, прибрав клас _watcher-view`);
-                }
+                    if (!watchOnce || watchOnce.toLowerCase() === "false") !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
+                } else if (!watchOnce || watchOnce.toLowerCase() === "false") targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
             }
             scrollWatcherOff(targetElement, observer) {
                 observer.unobserve(targetElement);
@@ -6656,6 +6654,13 @@
                     detail: {
                         entry
                     }
+                }));
+            }
+            handleWheelEvent(event) {
+                const scrollSpeed = Math.abs(event.deltaY);
+                const elementsToAnimate = document.querySelectorAll("[data-watch]");
+                elementsToAnimate.forEach((element => {
+                    element.style.transitionDuration = `${scrollSpeed / 1e3}s`;
                 }));
             }
         }
