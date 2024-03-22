@@ -6258,8 +6258,7 @@ body::after {
 }
 
 .hottest__wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: none;
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
