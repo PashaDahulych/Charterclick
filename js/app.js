@@ -5534,7 +5534,7 @@
                     on: {}
                 });
                 new core(".partner__slider", {
-                    modules: [ Pagination, Autoplay ],
+                    modules: [ Pagination ],
                     observer: true,
                     observeParents: true,
                     spaceBetween: 0,
@@ -5553,17 +5553,15 @@
                     },
                     breakpoints: {
                         319: {
-                            slidesPerView: 1.05,
-                            spaceBetween: 10,
-                            centeredSlides: true,
-                            initialSlide: 1
+                            slidesPerView: 1,
+                            spaceBetween: 15,
+                            centeredSlides: true
                         },
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 0
                         },
                         992: {
-                            centeredSlides: true,
                             slidesPerView: 3,
                             spaceBetween: 0
                         }
